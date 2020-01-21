@@ -7,7 +7,7 @@ const $elemUtil = {
     /**
      * $from から $to に値を転記する
      * $from.find("[name=fromname]").val() を $to.find("[name=toname]).val() にセット。
-     * 使用例 copyValue($('#nounyuForm'), $('#kensakuForm'), "tksName") => #nounyuForm.tksNameを#kensakuForm.tksFormにコピー)
+     * 使用例 copyValue($('#fromForm'), $('#toForm'), "myname") => #fromForm[name=myname]を#toForm[name=myname]をにコピー
      */
     copy: function ($fromParent, $toParent, fromName, toName, allowMultipleTo = false) {
 
